@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Photo Gallery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="gallery.css">
+	
+</head>
+<body>
+	
+	 <div>
+        <p id = "image">Hover over an image below to display here.<p>
+      <div id="buttons">
+        <center>
+        <button onclick = "openFunction()">Explain images</button>
+        <button onclick = "closeFunction()">Hide explaination</button>
+        <p id="content">This is a photo gallery, displaying image details.</p>
+        </center>
+      </div>
+    </div>
+    <center><h1 id="header">Photo Gallery</h1></center> 
+	
+	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+	<img class = "preview" src = "https://i.pinimg.com/originals/b8/1c/f1/b81cf17812047c35435a0e6c5d9edd7c.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+
+	<script src = "gallery.js"></script>
+
+</body>
+</html>
